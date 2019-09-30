@@ -29,7 +29,7 @@ export class Championship {
 
     init() {
         this.router.get('/', (req: Request, res: Response, next: NextFunction) => {
-            console.log("TEST MIDDLEWARE")
+            // Local middleware
             next();
         }, this.get);
     }

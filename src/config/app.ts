@@ -12,13 +12,7 @@ class App {
 
   // Constructor of the express instance
   constructor() {
-
-    try {
-      dotenv.config();
-    } catch (err) {
-      console.log(`UNABLE TO RUN DOTENV - ${err}`);
-    }
-
+    dotenv.config();
     this.app = express();
     this.middleware();
     this.routes();
