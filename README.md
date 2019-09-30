@@ -1,6 +1,6 @@
 #  Nodejs API
 
-A API that uses NodeJS, Typescript and Express.
+API that uses NodeJS, Typescript and Express.
 
 ### Requests Examples
 
