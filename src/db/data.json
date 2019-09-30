@@ -1,0 +1,23 @@
+{
+    "message": "test",
+    "championships": [
+        {  "championship": "Australian Open", "year": "2019", "champion": "Rafael Nadal", "points": 2000 },
+        {  "championship": "Roland Garros", "year": "2019", "champion": "Novak Djokovic", "points": 2000 },
+        {  "championship": "Wimbledon", "year": "2019", "champion": "Novak Djokovic", "points": 2000 },
+        {  "championship": "Roland Garros", "year": "2018", "champion": "Rafael Nadal", "points": 2000 },
+        {  "championship": "Australian Open", "year": "2018", "champion": "Roger Federer", "points": 2000 },
+        {  "championship": "Roland Garros", "year": "2016", "champion": "Novak Djokovic", "points": 2000 },
+        {  "championship": "Wimbledon", "year": "2018", "champion": "Novak Djokovic", "points": 2000 },
+        {  "championship": "Roland Garros", "year": "2018", "champion": "Rafael Nadal", "points": 2000 },
+        {  "championship": "Wimbledon", "year": "2016", "champion": "Andy Murray", "points": 2000 },
+        {  "championship": "US Open", "year": "2017", "champion": "Rafael Nadal", "points": 2000 },
+        {  "championship": "US Open", "year": "2016", "champion": "Stan Wawrinka", "points": 2000 },
+        {  "championship": "Australian Open", "year": "2017", "champion": "Roger Federer", "points": 2000 },
+        {  "championship": "Australian Open", "year": "2016", "champion": "Novak Djokovic", "points": 2000 },
+        {  "championship": "Wimbledon", "year": "2017", "champion": "Roger Federer", "points": 2000 },
+        {  "championship": "US Open", "year": "2019", "champion": "Rafael Nadal", "points": 2000 },
+        {  "championship": "Roland Garros", "year": "2017", "champion": "Rafael Nadal", "points": 2000 },
+        {  "championship": "US Open", "year": "2018", "champion": "Novak Djokovic", "points": 2000 },
+        {  "championship": "Roland Garros", "year": "2017", "champion": "Rafael Nadal", "points": 2000 }
+    ]
+}
