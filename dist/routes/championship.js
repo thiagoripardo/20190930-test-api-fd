@@ -22,7 +22,6 @@ class Championship {
     }
     init() {
         this.router.get('/', (req, res, next) => {
-            console.log("TEST MIDDLEWARE");
             next();
         }, this.get);
     }

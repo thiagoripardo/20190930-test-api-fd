@@ -7,12 +7,7 @@ const dotenv = require("dotenv");
 const championship_1 = require("../routes/championship");
 class App {
     constructor() {
-        try {
-            dotenv.config();
-        }
-        catch (err) {
-            console.log(`UNABLE TO RUN DOTENV - ${err}`);
-        }
+        dotenv.config();
         this.app = express();
         this.middleware();
         this.routes();
