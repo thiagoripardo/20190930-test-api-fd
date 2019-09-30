@@ -1,6 +1,5 @@
 // Filter an array
 const filterByKey = (array: Array<any>, key: string, value: string) => {
-    console.log(array.filter(element => (element[key] == value)))
     return array.filter(element => (element[key] == value));
 }
 

@@ -1,7 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 const filterByKey = (array, key, value) => {
-    console.log(array.filter(element => (element[key] == value)));
     return array.filter(element => (element[key] == value));
 };
 exports.filterByKey = filterByKey;
