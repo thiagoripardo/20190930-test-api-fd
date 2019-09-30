@@ -14,20 +14,20 @@ export class Championship {
     // Examples
     // Filter: GET {url/resource}?year=2019&champion=Rafael%20Nadal&championship=US%20Open
     // Sort: GET {url/resource}?orderBy=year&order=asc
-    // Pagination: GET {url/resource}?limit=5&skip=5
+    // Pagination: GET {url/resource}?pageSize=5&pageNumber=1
     public get(req: Request, res: Response, next: NextFunction) {
 
         let responseData = data.championships;
 
         // Filter
         if(req.query.year) {
-            responseData = responseData.filter(element => (element.year == req.query.year))
+            responseData = filterByKey(responseData, 'year', req.query.year)
         } 
         if (req.query.championship) {
-            responseData = responseData.filter(element => (element.championship == req.query.championship))
+            responseData = filterByKey(responseData, 'championship', req.query.championship)
         } 
         if (req.query.champion) {
-            responseData = responseData.filter(element => (element.champion == req.query.champion))
+            responseData = filterByKey(responseData, 'champion', req.query.champion)
         }
 
         // Sort
@@ -36,10 +36,8 @@ export class Championship {
         }
 
         // Pagination
-        if(req.query.limit && req.query.skip){
-            console.log(parseInt(req.query.skip))
-            // responseData = responseData.splice(0, req.query.skip)
-            responseData = responseData.slice(parseInt(req.query.skip), parseInt(req.query.limit))
+        if(req.query.pageSize && req.query.pageNumber){
+            responseData = paginate(responseData, parseInt(req.query.pageSize), parseInt(req.query.pageNumber))
         }
 
         res.send(responseData);

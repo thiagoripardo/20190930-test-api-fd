@@ -8,6 +8,7 @@ A API that uses NodeJS, Typescript and Express.
 
 Filter: GET /api/championships?year=2019&champion=Rafael%20Nadal&championship=US%20Open
 Sort: GET /api/championships?orderBy=year&order=asc
+Pagination: GET /api/championships?pageSize=5&pageNumber=1
 
 ```
 
